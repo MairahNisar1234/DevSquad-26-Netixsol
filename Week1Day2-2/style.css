@@ -1,0 +1,193 @@
+body {
+    /* This changes everything inside the body */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #333; /* Dark gray for better readability */
+}
+
+.cv-container .intro{
+    text-align:center;
+}
+.cv-container .info {
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+.cv-container .profile{
+    display:flex;
+    gap:100px;
+}
+.item {
+  display: grid;
+  grid-template-columns: 150px 1fr; 
+  padding: 0;
+}
+.profile-item {
+  display: flex;         /* Forces icon and text into a row */
+  flex-direction:column;
+  gap:10px;          
+}
+.profile img {
+  width:50px;
+  height:50px;
+}
+
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.summary .item{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.summary .job {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* 150px for the label, the rest for text */
+  align-items: start;              /* Aligns the heading to the top of the text */
+  gap: 20px;                       /* Space between the label and the text */
+  padding: 20px 0;
+}
+
+.label {
+  font-size: 1rem;
+  color: #000;
+
+}
+
+.content {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* This handles the 'Experience' vs 'Job Info' columns */
+.item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+
+  padding: 20px 0;
+}
+
+/* This handles the Job Title vs Date alignment */
+.job-header {
+  display: flex;
+  justify-content: space-between; /* This pushes the date to the far right */
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.job-meta {
+  text-align: right; /* Ensures the date and location are right-aligned */
+}
+
+.company-link {
+  color: #38a169; /* Green color to match icons */
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.job-details {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+.education {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 150px 1fr; 
+  gap: 30px;
+    padding: 20px 0;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between; /* This pushes the date-box to the right */
+  align-items: flex-start;
+}
+
+.date-box {
+  text-align: right; /* Aligns "Bachelor's..." under the bold date */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* This creates two equal columns side-by-side */
+    gap: 40px;                      /* Adds space between the two projects */
+}
+
+.project-entry .role {
+    display: block;                /* Ensures 'Project Lead' stays on its own line */
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-entry p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* This creates two equal columns side-by-side */
+    gap: 10px;                      /* Adds space between the two projects */
+}
+
+.skills-entry .role {
+    display: block;                /* Ensures 'Project Lead' stays on its own line */
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.skills-entry p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+/* This keeps the Certifications label on the left and content on the right */
+.cert-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;    
+}      
+
+.cert-date {
+    font-weight: bold; 
+}
+
+.provider {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 4px;
+}
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for languages */
+    gap: 40px;
+}
+
+.lang-unit span {
+    font-size: 0.9rem;
+    color: #666;
+}
