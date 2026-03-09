@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Epic Games Clone</title>
+
+</head>
+<body class="bg-black text-[#AAAAAADE]/87 font-thin">
+
+    <nav class="bg-[#2a2a2a] relative z-50 font-medium">
+        <div class="flex items-center justify-between h-[52px] px-4">
+            
+            <div class="flex items-center h-full">
+                <button id="menu-btn" class="md:hidden mr-4 text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+
+                <div class="cursor-pointer mr-6">
+                    <img src="assets/logo.png" alt="Logo" class="h-8">
+                </div>
+                
+                <ul class="hidden md:flex items-center h-full text-[12px]  text-[#ccc] tracking-wider">
+                    <li class="h-full flex items-center px-4 border-b-4 border-blue-600 text-white cursor-pointer">STORE</li>
+                    <li class="h-full flex items-center px-4 hover:text-white cursor-pointer transition-all">FAQ</li>
+                    <li class="h-full flex items-center px-4 hover:text-white cursor-pointer transition-all">HELP</li>
+                    <li class="h-full flex items-center px-4 hover:text-white cursor-pointer transition-all">UNREAL ENGINE</li>
+                </ul>
+            </div>
+
+            <div class="flex items-center h-full gap-4">
+                <a href='#'>
+                <img src="assets/frame.png" class="h-6">
+            </a>
+                
+                <div class="flex items-center gap-2 text-[#ccc] hover:text-white cursor-pointer text-[12px] ">
+                    <img src="assets/person.png" class="h-6">
+                    <a href="#">
+                    <span class="hidden sm:inline">SIGN IN</span></a>
+                </div>
+
+                <button class="bg-[#0078f2] hover:bg-blue-500 text-white px-6 h-full text-[12px] transition-colors">
+                    DOWNLOAD
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-[52px] left-0 w-full bg-[#2a2a2a] border-t border-gray-700 flex flex-col p-4 md:hidden text-white">
+            <a href="#" class="py-3 text-[14px] font-bold border-b border-gray-700">STORE</a>
+            <a href="#" class="py-3 text-[14px] font-bold border-b border-gray-700">FAQ</a>
+            <a href="#" class="py-3 text-[14px] font-bold border-b border-gray-700">HELP</a>
+            <a href="#" class="py-3 text-[14px] font-bold">UNREAL ENGINE</a>
+        </div>
+    </nav>
+
+  <script src="index.js"></script>
+</body>
+</html>
