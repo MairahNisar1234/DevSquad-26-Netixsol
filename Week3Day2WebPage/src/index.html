@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+
+    .light-theme { background-color: white !important; color: black !important; }
+    
+    .light-theme h1, 
+    .light-theme #large-text { color: black !important; }
+    
+    .light-theme .logo-img { 
+        filter: brightness(0) !important; 
+    }
+    .light-theme .social-icon { border-color: #d1d5db !important; }
+    .light-theme .social-icon i { color: black !important; }
+    .light-theme .social-link i { 
+        color: black !important; 
+    }
+    .light-theme .social-link { 
+        border-color: #374151 !important; }
+    .light-theme #theme-toggle { 
+        background-color: black !important; 
+    }
+    .light-theme .contact-btn {
+        background-color: black !important;
+        color: white !important;
+    }
+    .light-theme #toggle-dot { 
+        background-color: white !important; 
+    }
+    .light-theme #mobile-menu {
+        background-color: black !important;
+        border-color: #374151 !important; 
+    }
+    .light-theme #mobile-menu a {
+        color: white !important;
+        border-bottom-color: #374151 !important;
+    }
+    .light-theme #mobile-menu .contact-btn {
+        background-color: white !important;
+        color: black !important;
+    }
+    .large-text {
+        font-size: 4rem !important; /* Smaller on tablets/mobile */
+        line-height: 1 !important;
+    }
+
+
+@media (max-width: 640px) {
+    .large-text {
+        font-size: 2.8rem !important;
+    }
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/Gotham-Book.woff2') format('woff2'); /* Adjust path and format */
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+<script>
+ tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        anton: ['Anton', 'sans-serif'],
+        gotham: ['Gotham', 'sans-serif'], // Add your custom font here
+      },
+    },
+  },
+};
+</script>
+</head>
+<body class="bg-black text-white transition-colors duration-300 body-anton" id="body-wrapper">
+<nav class="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto w-full">
+    <div class="flex items-center gap-2 h-8 w-auto">
+   <img id="main-logo" src="assets/Group 1.png" alt="Logo Icon" class="logo-img h-full w-auto object-contain">
+    
+    <img src="assets/tian.png" alt="Brand Name" class="logo-img h-full w-auto object-contain">
+</div>
+
+    <div class="hidden md:flex space-x-8 text-sm font-medium opacity-80 font-thin">
+        <a href="#" class="hover:opacity-100">Home</a>
+        <a href="#" class="hover:opacity-100">Portfolio</a>
+        <a href="#" class="hover:opacity-100">Skills</a>
+        <a href="#" class="hover:opacity-100">About Me</a>
+    </div>
+
+    <div class="flex items-center space-x-4 md:space-x-6">
+    <button id="theme-toggle" class="relative inline-flex items-center h-8 rounded-full w-14 transition-colors duration-300 bg-[#FFE870] px-1">
+        <span id="toggle-dot" class="z-10 inline-block w-6 h-6 transform bg-[#FFFCEE] rounded-full transition-transform duration-300 translate-x-0 shadow-sm"></span>
+        
+        <span class="absolute right-2 text-zinc-900 text-xs">
+            <i class="fas fa-moon"></i>
+        </span>
+    </button>
+
+<a href="#" 
+class="contact-btn font-gotham font-normal hidden sm:inline-flex items-center justify-center
+bg-[#8B5CF6] text-white px-6 py-2.5 rounded-md text-sm 
+hover:opacity-90 transition w-[130px]">
+Contact Me
+</a>
+    <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars" id="menu-icon"></i>
+    </button>
+</div>
+    <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-zinc-900 border-b border-zinc-800 p-6 flex flex-col space-y-4 z-50 md:hidden transition-all text-center font-light">
+        <a href="#" class="text-lg border-b border-zinc-800 pb-2">Home</a>
+        <a href="#" class="text-lg border-b border-zinc-800 pb-2">Portfolio</a>
+        <a href="#" class="text-lg border-b border-zinc-800 pb-2">Skills</a>
+        <a href="#" class="text-lg border-b border-zinc-800 pb-2">About Me</a>
+<a href="#" 
+class="contact-btn font-normal font-gotham hidden sm:inline-flex items-center justify-center
+bg-[#8B5CF6] text-white px-6 py-2.5 rounded-md text-sm 
+hover:opacity-90 transition w-[130px]">
+Contact Me
+</a>
+    </div>
+</nav>
+
+   <main class="max-w-7xl mx-auto px-6 lg:px-16 py-12 flex flex-col lg:flex-row items-center justify-between gap-10 min-h-[80vh]">
+    
+    <div class="w-full lg:w-1/2 space-y-8 text-center lg:text-left items-center lg:items-start flex flex-col">
+        <div class="relative inline-block">
+            <h1 id="large-text" class="font-anton 
+text-[55px] 
+sm:text-[70px] 
+md:text-[90px] 
+lg:text-[110px] 
+leading-[90%] uppercase">
+Product <br> Designer
+</h1>
+
+            <div class="absolute -top-2 -right-6 sm:-right-10 md:-right-28 h-12 sm:h-16 md:h-24">
+                <img src="assets/Portal.png" alt="Star Icon" class="logo-img h-full w-auto">
+            </div>
+
+            <h2 class="font-anton text-4xl md:text-[50px] uppercase leading-none tracking-[-0.03em] bg-gradient-to-r from-[#FF7E82] via-[#FFD26F] to-[#3BA8B6] bg-clip-text text-transparent mt-4">
+                Cristian Muñoz
+            </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-4 text-xl pt-4 max-w-[420px]">
+            <a href="#" class="social-link flex items-center justify-center w-14 h-14 rounded-2xl border border-zinc-500/30 hover:border-pink-500/50 hover:bg-zinc-800/50 transition-all active:scale-90 group">
+            <i class="fab fa-instagram text-white group-hover:text-pink-500 text-2xl"></i>
+        </a>
+        <a href="#" class="social-link flex items-center justify-center w-14 h-14 rounded-2xl border border-zinc-500/30 hover:border-pink-500/50 hover:bg-zinc-800/50 transition-all active:scale-90 group">
+            <i class="fab fa-figma text-white group-hover:text-pink-500 text-2xl"></i>
+        </a>
+        <a href="#" class="social-link flex items-center justify-center w-14 h-14 rounded-2xl border border-zinc-500/30 hover:border-pink-500/50 hover:bg-zinc-800/50 transition-all active:scale-90 group">
+            <i class="fab fa-linkedin text-white group-hover:text-pink-500 text-2xl"></i>
+        </a>
+        <a href="#" class="social-link flex items-center justify-center w-14 h-14 rounded-2xl border border-zinc-500/30 hover:border-pink-500/50 hover:bg-zinc-800/50 transition-all active:scale-90 group">
+            <i class="fab fa-twitter text-white group-hover:text-pink-500 text-2xl"></i>
+        </a>
+        <a href="#" class="social-link flex items-center justify-center w-14 h-14 rounded-2xl border border-zinc-500/30 hover:border-pink-500/50 hover:bg-zinc-800/50 transition-all active:scale-90 group">
+            <i class="fab fa-telegram text-white group-hover:text-pink-500 text-2xl"></i>
+        </a>
+        <a href="#" class="social-link flex items-center justify-center w-14 h-14 rounded-2xl border border-zinc-500/30 hover:border-pink-500/50 hover:bg-zinc-800/50 transition-all active:scale-90 group">
+            <i class="fab fa-medium text-white group-hover:text-pink-500 text-2xl"></i>
+        </a>
+        </div>
+
+        <button class="group w-full sm:max-w-[420px] py-4 
+    bg-black dark:bg-[#292929] 
+    text-white font-normal
+    border border-zinc-800 rounded-md 
+    flex items-center justify-center gap-3 
+    transition-all duration-300 hover:opacity-90 font-gotham">
+    
+    <span class="text-sm font-medium tracking-widest uppercase">
+        Download Curriculum Vitae
+    </span>
+    
+    <div class="text-white">
+        <img src="assets/arrow-circle-right.png" class="group-hover:translate-x-1 transition-transform">
+    </div>
+</button>
+    </div>
+<div class="hidden lg:block w-[400px] h-[450px] flex-shrink-0">
+    <img 
+        src="assets/car.png" 
+        alt="Cyberpunk Car"
+        class="w-full h-full object-cover rounded-lg"
+    >
+</div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
